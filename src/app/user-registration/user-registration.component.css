@@ -1,0 +1,15 @@
+input[type=text] {
+    width:40%    
+}
+#form {
+text-align: center;
+}
+#heading {
+    text-align: center;
+}
+.submit-button {
+    color: black;
+    background-color: green;
+    width: 100px;
+    height: 30px;
+}
