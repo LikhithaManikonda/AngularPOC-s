@@ -1,4 +1,6 @@
 # UserRegistrationPortal
+#Introduction
+To provide Users to register their details and retrieve their details whenever required.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 
