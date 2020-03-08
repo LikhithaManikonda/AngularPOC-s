@@ -11,6 +11,7 @@ import {FormsModule} from '@angular/forms'
 import { from } from 'rxjs';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     DeleteComponent,
     HeaderComponent,
     FooterComponent,
+    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
+import { UserModel } from '../UserModel';
 
 @Component({
   selector: 'app-search',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-
-  constructor() { }
-
+  
+  users:UserModel[];
+  constructor(private service:UserService) { }
   ngOnInit(): void {
   }
 
+ 
 }
