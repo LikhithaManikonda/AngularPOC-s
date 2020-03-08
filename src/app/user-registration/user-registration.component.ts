@@ -19,9 +19,20 @@ export class UserRegistrationComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  //For Registering the new user
   public registerUser(){
+    if(this.fname!=undefined && this.lname!=undefined && this.email!=undefined && this.phoneNo!=0) {
+    this.registrationSuccessMsg ="Congratulations "+this.fname+" your Registration is Success";}
+    else {
+      this.registrationSuccessMsg ="Please Enter all the details";
+    }
    let response = this.service.doRegisterUser(this.user);
    response.subscribe((data)=>this.registrationSuccessMsg=data);
+  }
+
+  //for searching the user
+  public searchUser() {
+
   }
 
 }

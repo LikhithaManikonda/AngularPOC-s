@@ -8,7 +8,7 @@
     -->
     <label for=fname> First Name</label>
     <input type="text"   [(ngModel)]=fname id=fname  name="fname"><br>
-    <!--Testing whether two way binding is working or not--><h1>fname: {{fname}}</h1>
+    <!--Testing whether two way binding is working or not<h1>fname: {{fname}}</h1>-->
     <label for=lname> Last Name</label>
     <input type="text" id=lname name="lname"  [(ngModel)]=lname><br>
     <label>Gender</label>
@@ -23,6 +23,8 @@
     <label for=phno>PhoneNumber</label>
     <input type="text" id=phno name="phno" [(ngModel)]="phoneNo"><br>
     <button class="btn btn-primary" (click)=registerUser()>Register</button>
+    <!--testing registration--><br>
+   <span class="btn btn-success"> {{registrationSuccessMsg}}</span>
 </form>
 </div>
 <div><application-footer></application-footer></div>
