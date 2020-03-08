@@ -16,9 +16,11 @@ export class UserRegistrationComponent implements OnInit {
    phoneNo:number
    user = new UserModel(this.fname,this.lname,this.gender,this.email,this.phoneNo);
    registrationSuccessMsg:String;
+   users:UserModel[];
 
   ngOnInit(): void {
   }
+
   //For Registering the new user
   public registerUser(){
     if(this.fname!=undefined && this.lname!=undefined && this.email!=undefined && this.phoneNo!=0) {
@@ -30,9 +32,9 @@ export class UserRegistrationComponent implements OnInit {
    response.subscribe((data)=>this.registrationSuccessMsg=data);
   }
 
-  //for searching the user
-  public searchUser() {
-
+  //retrieving the user
+  public getUsers() {
+    let response= this.service.getUsers();
+    response.subscribe((data)=>this.users=data);
   }
-
 }
