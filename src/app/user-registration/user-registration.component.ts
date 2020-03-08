@@ -9,8 +9,12 @@ import { UserService } from '../user.service';
 })
 export class UserRegistrationComponent implements OnInit {
   constructor(private service:UserService) { }
-
-   user: UserModel = new UserModel("","","","",8897416854);
+   public fname:string
+   lname:string
+   gender:string
+   email:string
+   phoneNo:number
+   user = new UserModel(this.fname,this.lname,this.gender,this.email,this.phoneNo);
    registrationSuccessMsg:String;
 
   ngOnInit(): void {
