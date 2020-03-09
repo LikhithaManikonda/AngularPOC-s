@@ -1,1 +1,24 @@
-<p>delete works!</p>
+<div><application-header></application-header></div><br>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+<!--<div *ngFor = "let user of users">-->
+    <p> <span class="glyphicon glyphicon-user"></span></p>    
+<table class=styletable>
+    <tr><td>FirstName: {{fname}}</td></tr>
+    <tr><td>LastName:  {{lname}}</td></tr>
+    <tr><td>Gender:   {{gender}}</td></tr>
+    <tr><td>Email:  {{email}}</td></tr>
+    <tr><td>PhoneNumber:   {{phoneno}}</td></tr>
+    <button class="btn btn-success" (click)=deleteUser(email)>Delete</button>
+  <span class="glyphicon glyphicon-trash"></span>
+
+</table>
+<!--</div>-->
+{{successfulDeleteMsg}}
+<div>
+<application-footer></application-footer>
+</div>

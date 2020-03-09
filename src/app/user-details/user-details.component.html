@@ -1,4 +1,17 @@
 <div><application-header></application-header></div><br>
 <button class="btn btn-primary" (click)=getUsers()>UserDetails</button>
-{{registerUsersMsg}}
+{{registerUsersMsg}}  
+
+<div *ngFor = "let userChec of userCheck">
+    {{userChec}}
+</div>
+<div *ngFor = "let user of users">
+<table>
+ <td>FirstName: {{user.fname}}</td>
+ <td>LastName:  {{user.lname}}</td>
+ <td>Gender:   {{user.gender}}</td>
+ <td>Email:  {{user.email}}</td>
+ <td>PhoneNumber:   {{user.phno}}</td>
+</table>
+</div>
 <div><application-footer></application-footer></div>
