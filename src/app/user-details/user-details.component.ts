@@ -9,6 +9,7 @@ import { UserService } from '../user.service';
 })
 export class UserDetailsComponent implements OnInit {
   users:UserModel[];
+  userCheck = ["hey","hii","hello"];
   registerUsersMsg:string;
   constructor(private service:UserService) { }
 
